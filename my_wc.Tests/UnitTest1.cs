@@ -13,11 +13,10 @@ namespace my_wc.Tests
             var error = new StringWriter();
             var input = new StringReader("hello world");
             
-            // Тестуємо запуск з опцією -w (рахувати слова)
             int result = App.Run(new[] { "-w" }, input, output, error);
 
-            Assert.That(result, Is.EqualTo(0)); // Перевірка exit code [cite: 82]
-            Assert.That(output.ToString().Trim(), Is.EqualTo("2")); // "hello world" = 2 слова [cite: 83]
+            Assert.That(result, Is.EqualTo(0));
+            Assert.That(output.ToString().Trim(), Is.EqualTo("2"));
         }
 
         [Test]
@@ -28,7 +27,7 @@ namespace my_wc.Tests
             
             int result = App.Run(new[] { "missing_file.txt" }, Console.In, output, error);
 
-            Assert.That(result, Is.EqualTo(1)); // Часткова помилка [cite: 42]
+            Assert.That(result, Is.EqualTo(1));
             Assert.That(error.ToString(), Does.Contain("No such file or directory")); // Помилка в stderr [cite: 92]
         }
     }
