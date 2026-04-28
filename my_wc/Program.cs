@@ -60,7 +60,7 @@ namespace my_wc
             return finalExitCode;
         }
 
-        private static string FormatOutput(string text, bool l, bool w, bool c, string name, long bCount = -1)
+        public static string FormatOutput(string text, bool l, bool w, bool c, string name, long bCount = -1)
         {
             var results = new List<string>();
             if (l) results.Add(text.Split('\n').Length.ToString());

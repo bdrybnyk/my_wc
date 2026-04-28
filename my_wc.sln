@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "my_wc", "my_wc\my_wc.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "my_wc.Tests", "my_wc.Tests\my_wc.Tests.csproj", "{AC6CA73D-C8DE-485C-89B6-817DD7863280}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mcp_server", "mcp_server\mcp_server.csproj", "{59ED82BF-3ECF-4532-8B22-25037C29BDB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{AC6CA73D-C8DE-485C-89B6-817DD7863280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC6CA73D-C8DE-485C-89B6-817DD7863280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC6CA73D-C8DE-485C-89B6-817DD7863280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59ED82BF-3ECF-4532-8B22-25037C29BDB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59ED82BF-3ECF-4532-8B22-25037C29BDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59ED82BF-3ECF-4532-8B22-25037C29BDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59ED82BF-3ECF-4532-8B22-25037C29BDB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
